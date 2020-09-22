@@ -1,4 +1,4 @@
-class Show < ActiveRecord::Base
+class Shows < ActiveRecord::Base
 
   def self.highest_rating
     self.maximum(:rating)
@@ -28,4 +28,4 @@ class Show < ActiveRecord::Base
     self.all.order(:name)
   end
 
-end  
+end
